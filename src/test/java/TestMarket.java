@@ -90,8 +90,10 @@ public class TestMarket {
             WebElement firtstElement = driver.findElement(By.xpath("//span[text()='Смартфон realme C35 4/64 ГБ RU, Dual nano SIM, зеленый']"));
 
             Actions moveRait = new Actions(driver);
-            WebElement rait = driver.findElement(By.xpath("//button[contains(@data-zone-data, 'по рейтингу']"));
+            WebElement rait = driver.findElement(By.xpath("//button[@data-autotest-id='rorp']"));
             moveDia.moveToElement(rait).click().build().perform();
+
+
 
 
         } catch (InterruptedException e) {
